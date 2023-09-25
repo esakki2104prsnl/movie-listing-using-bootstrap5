@@ -32,30 +32,31 @@
   <body>
     <header>
       <div class="container-fluid bg-warning p-2 justify-content-center">
-        <div class="row m-1">
-          <div class="col-3 text-center my-auto">
-            <h1 style="font-family: 'EB Garamond', serif; font-weight: 800">
-              Movie List
+        <div class="row ">
+          <div class="col text-center my-auto">
+            <h1 style="font-family: 'EB Garamond'">
+              <i class="fa-solid fa-ghost fa-lg p-3"></i>
+              Ghost  Corner
             </h1>
           </div>
 
           <div
-            class="col-6 bg-light rounded text-center my-auto p-0"
+            class="col rounded text-center my-auto p-2"
             style="font-family: 'EB Garamond'; font-weight: 600"
           >
-            <div class="d-flex justify-content-around">
+            <div class="d-inline-flex justify-content-around">
               <div class="p-2 bd-highlight">
-                <a class="text-decoration-none text-dark" href="#3sha">
+                <a class="text-decoration-none text-dark border border-secondary p-2 rounded" href="#3sha">
                   Thrisha</a
                 >
               </div>
               <div class="p-2 bd-highlight">
-                <a class="text-decoration-none text-dark" href="#action"
+                <a class="text-decoration-none text-dark border border-secondary p-2 rounded" href="#action"
                   >Action</a
                 >
               </div>
               <div class="p-2 bd-highlight">
-                <a class="text-decoration-none text-dark" href="#horror"
+                <a class="text-decoration-none text-dark border border-secondary p-2 rounded" href="#horror"
                   >Horror</a
                 >
               </div>
@@ -67,7 +68,7 @@
             </div>
           </div>
 
-          <div class="col-3 p-0 d-inline-flex">
+          <div class="col-3 d-inline-flex">
           <div class="p-sm-1 m-1">
             <button class="btn btn-outline-dark">Sign in</button>
           </div>
@@ -80,6 +81,28 @@
     </header>
 
     <main>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./assets/img/carousel/maxresdefault (1).jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./assets/img/carousel/aiyodhi.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/carousel/ps-1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
       <!-- Main Thrisha Krishnan -->
       <section class="bg-info">
         <h1
@@ -513,8 +536,8 @@
 
    <footer class="bg-secondary">
     <div class="container">
-    <div class="row align-center">
-      <div class="col p-2 ">
+    <div class="row">
+      <div class="col p-2">
         <a href="https://www.linkedin.com/in/esakki-m/" target="_blank">  
           <i class="fa-brands fa-linkedin fa-xl mx-auto "></i>
         </a>
@@ -538,7 +561,7 @@
     </div>
   </div> 
     <div class="text-center text-bg-secondary" style="font-size: 18px;">
-          All Rights Reserved by &copy;
+          All Rights Reserved by &copy;2023
           <a href="https://www.linkedin.com/in/esakki-m/"  target="_blank"
           class="text-decoration-none text-light" 
           target="_blank">M.Esakki</a>
